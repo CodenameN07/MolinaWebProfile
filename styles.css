@@ -1,0 +1,234 @@
+/* This is my CSS file */
+
+
+ /* Welcome Section */
+#welcome {
+  padding: 0;
+  background-image: url('bgcover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #welcome h1 {
+    font-size: 2.5rem;
+  }
+
+  #welcome p {
+    font-size: 1rem;
+  }
+}
+
+#welcome .row h1{
+    color:#DFDFDF;
+}
+
+ /* AboutMe Section */
+#aboutme{
+    background-color: #de4300;  
+    padding-left: 100px;
+}
+
+#aboutme .row .p1{
+    color:  #DFDFDF;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: -3px;
+}
+
+#aboutme .row .p2{
+    color:  #0E34A0;
+    font-size: 50px;
+    font-weight:bolder;
+    letter-spacing: -3px;
+    text-shadow: 
+        -3px -3px 0 white, /* Top left */
+        3px -3px 0 white, /* Top right */
+        -3px 3px 0 white, /* Bottom left */
+        3px 3px 0 white; /* Bottom right */
+}
+
+.hex-underline {
+  text-decoration: underline !important;
+  text-decoration-color: #242124 !important; /* Custom underline color */
+  text-decoration-thickness: 4px !important;  /* Optional: Custom thickness */
+  text-decoration-style: solid !important;   /* Optional: Line style */
+}
+
+.hex-underline2 {
+  text-decoration: underline !important;
+  text-decoration-color: #de4300 !important; /* Custom underline color */
+  text-decoration-thickness: 4px !important;  /* Optional: Custom thickness */
+  text-decoration-style: solid !important;   /* Optional: Line style */
+}
+
+#aboutme .row .p3{
+  color:  #DFDFDF;
+  font-size: 50px;
+  font-weight:bolder;
+  letter-spacing: -3px;
+}
+
+#aboutme .row h1{
+    color:  #DFDFDF;
+    font-size: 75px;
+    font-weight: bolder;
+}
+
+.image-container {
+  position: relative;
+  width: 500px;  /* Set the container size */
+  height: 500px;
+  overflow: hidden;
+  left: 80px;
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 5px;
+  object-fit: cover; /* Keeps the aspect ratio and fills the container */
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.image-container img:first-child {
+  opacity: 1; /* Default image visible */
+}
+
+.image-container img:last-child {
+  opacity: 0; /* Hover image hidden */
+}
+
+.image-container:hover img:first-child {
+  opacity: 0; /* Default image fades out */
+}
+
+.image-container:hover img:last-child {
+  opacity: 1; /* Hover image fades in */
+}
+
+  /* Skills Section */
+#skills{
+    background-color: #242124;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#skills .row h1{
+  color:  #DFDFDF;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: -3px;
+}
+
+#skills .row p{
+  color:  #DFDFDF;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: -3px;
+ }
+
+ #skillsCarousel h2 {
+  font-size: 2rem;
+  color: #de4300;
+}
+
+#skillsCarousel p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-color: #de4300; /* Customize color */
+  border-radius: 50%;
+}
+
+
+   /* Projects Section */
+#projects{
+  background-color: #de4300;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#projects .row p{
+    color:  #DFDFDF;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: -3px;
+}
+
+#projects .carousel-item img {
+  object-fit: cover;
+  height: 100%; /* Full height within 600px container */
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.body{
+    margin: 0;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cacaca;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
